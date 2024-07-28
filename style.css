@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.roadcontainer{
+    background-image: url(/images/roadandgrass.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.car{
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    background-color: transparent;
+    bottom: 100px;
+    animation: move 5s linear infinite;
+}
+
+.car1{
+    
+    left: 50px;
+    background-image:url(/images/car1f.png);
+    background-size: contain;
+    background-position: center;
+    bottom: 100px;
+    animation: moveleft 3s linear infinite;
+}
+
+.car2{
+    left: 150px;
+    background-image: url(/images/bike1f.png);
+    background-size: contain;
+    background-position: center;
+    bottom: 100px;
+    animation: moveright 3s linear infinite;
+}
+
+@keyframes moveleft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(150vw);
+    }
+}
+ 
+@keyframes moveright{
+    from{
+        transform: translateX(0);
+    }
+    to{
+      transform: translateX(200vw);
+    }
+}
+
+.car3{
+    left: 150px;
+    background-image: url(/images/airplane2f.png);
+    background-size: contain;
+    background-position: center;
+   top: 30px;
+   bottom: 15px;
+    animation: moveright 3s linear infinite;
+    }
+
+
+    .car4{
+        left: 150px;
+        background-image: url(/images/sportcar.png);
+        background-size: contain;
+        background-position: center;
+       bottom: 100px;
+        animation: moveleft 2s linear infinite;
+        }
+    
+        .car5{
+            left: 150px;
+            background-image: url(/images/walking2.png);
+            background-size: contain;
+            background-position: center;
+           bottom: 120px;
+            animation: move 9s linear infinite;
+            }
+        
+            @keyframes move{
+                from{
+                    transform: translateX(0);
+                }
+                to{
+                    transform: translateX(150vw);
+                }
+            }
